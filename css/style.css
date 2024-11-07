@@ -1,0 +1,225 @@
+body {
+    background-color: #eaf5d4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+main{
+    text-align: center;
+    flex-grow:1;
+}
+li{
+    display: flex;
+    text-decoration: none;
+}
+
+header section{
+    background:url(../images/header.png) ;
+    height:11em;
+    width: 100%;
+    display: flex;
+    animation: fadeIn 5s;
+   background-size: contain;
+   background-repeat: no-repeat;
+   border:0em;
+}
+.winkel header section{
+    background:url(../images/winkelsach1.png) ;
+    height:11em;
+    width: 100%;
+    display: flex;
+    animation: fadeIn 5s;
+   background-size: contain;
+   background-repeat: no-repeat;
+   border:0em;
+}
+.planten header section{
+    background:url(../images/plantenach1.png) ;
+    height:11em;
+    width: 100%;
+    display: flex;
+    animation: fadeIn 5s;
+   background-size: contain;
+   background-repeat: no-repeat;
+   border:0em;
+}
+
+header a{
+    display: flex;
+    color:antiquewhite;
+    background-color: darkslategray;
+    text-decoration: none;
+    padding: 0.6em;
+}
+
+header {
+    background-color: rgb(194, 226, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.n2 {
+    display: flex;
+   justify-content: flex-end;
+   align-items: center;
+    }
+    .n2 img{
+        transform: scale(1.2) rotate(90deg);
+         
+        }
+
+article {
+    position: relative; 
+    
+    background-color: #deb887;
+        display: flex;
+        padding:0.3em;
+        width: 40%;
+        text-align:center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 2em;
+        margin: 1em;
+        color:#2f4f4f
+       
+     
+    }
+    .n1{ 
+        display: flex;
+        padding:0.3em
+    ; align-items: center;
+    }
+    .i1{
+        height: 13em;
+        width: 50%;
+         border-radius: 8em;
+        }
+
+@keyframes fadeIn{
+    0%{ opacity: 0; }
+    100%{ opacity: 1; }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .liaan {
+        max-height: 70vh;
+        margin: 0 auto;
+        display: block;
+        opacity: 0;
+        
+        transform: translateX(-100%); /* Start buiten beeld aan de linkerkant */
+        transition: opacity 0.5s, transform 0.5s; /* Zorg voor een vloeiende overgang */
+    }
+    
+    article:hover .liaan {
+        opacity: 1; /* Maak het zichtbaar */
+        transform: translateX(-35%); /* Laat het in beeld schuiven */
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%); /* Begin buiten beeld */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%); /* Eindig op de juiste positie */
+    }
+  }
+main section{
+    display: flex;
+
+}
+
+img{
+    width: 100%;
+}
+
+.winkels section
+{
+    display: flex;
+    flex-direction: column;
+    height:41.5em;
+    align-items: center;
+}
+.winkels a{
+    background-color: #2f4f4f;
+    color:antiquewhite;
+    padding:0.2em;
+    text-decoration: none;
+    border-radius:2em ;
+}
+.winkels article{
+    width: 80%;
+}
+
+.winkels img{
+    transform: scale(0.9);
+    border-radius: 2em;
+}
+.planten article{
+    display: flex;
+    flex-direction: column;
+}
+.planten a{
+    background-color: #2f4f4f;
+    color:antiquewhite;
+    padding:0.2em;
+    text-decoration: none;
+    border-radius:2em ;
+}
+.planten img{
+    border-radius: 2em;
+}
+
+footer a{
+    display: flex;
+    text-decoration: none;
+    color: antiquewhite;
+    margin-right:3em ;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(32, 43, 43);
+    align-items: center;
+}
+footer img{
+    width: 20%;
+    margin: auto;
+    padding: 0.2em;
+}
+footer p{
+    color:antiquewhite;
+}
+
+#meer {display: none;}
+
+#knop{
+    background-color: darkslategray;
+    color:antiquewhite;
+}
+
+strong{
+    background-color: #857560;
+    padding: 0.2em;
+    border-radius: 1em;
+    color:goldenrod;
+}
+em{
+    color:silver;
+    background-color: #857560;
+    
+    border-radius: 0.5em;
+}
