@@ -10,10 +10,7 @@ main{
     text-align: center;
     flex-grow:1;
 }
-li{
-    display: flex;
-    text-decoration: none;
-}
+
 
 header section{
     background:url(../images/header.png) ;
@@ -37,7 +34,7 @@ header section{
 }
 .planten header section{
     background:url(../images/plantenach1.png) ;
-    height:11em;
+    height:12em;
     width: 100%;
     display: flex;
     animation: fadeIn 5s;
@@ -47,11 +44,11 @@ header section{
 }
 
 header a{
-    display: flex;
+    
     color:antiquewhite;
     background-color: darkslategray;
     text-decoration: none;
-    padding: 0.6em;
+    
 }
 
 header {
@@ -59,13 +56,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
+    
 }
 
-header ul{
-    display: flex;
-    flex-direction: row;
-}
+
 
 .n2 {
     display: flex;
@@ -142,6 +137,18 @@ main section{
 
 }
 
+nav li{
+    background-color: #2f4f4f;
+    color:antiquewhite;
+    text-decoration: none;
+    padding: 0.6em;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+}
+nav li img{
+    width: 20%;
+}
 img{
     width: 100%;
 }
@@ -153,7 +160,7 @@ img{
     height:41.5em;
     align-items: center;
 }
-.winkels a{
+.winkels main a{
     background-color: #2f4f4f;
     color:antiquewhite;
     padding:0.2em;
@@ -172,7 +179,7 @@ img{
     display: flex;
     flex-direction: column;
 }
-.planten a{
+.planten main a{
     background-color: #2f4f4f;
     color:antiquewhite;
     padding:0.2em;
@@ -213,6 +220,17 @@ footer p{
 
 strong{
     background-color: #857560;
+    display: flex;
+    align-items: end;
+    padding: 0.4em;
+    border-radius: 1em;
+    color:goldenrod;
+}
+strong.gold{
+    background-color: #857560;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.2em;
     border-radius: 1em;
     color:goldenrod;
@@ -220,6 +238,10 @@ strong{
 em{
     color:silver;
     background-color: #857560;
-    
+    padding: 0.2em;
     border-radius: 0.5em;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif ;
 }

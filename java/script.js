@@ -1,6 +1,6 @@
 function myFunction() {
     var punten = document.getElementById("punten");
-    var meerText = document.getElementById("meer");
+    var meerText = document.getElementById("meer","meer2","meer3");
     var knopText = document.getElementById("knop");
   
     if (punten.style.display === "none") {
